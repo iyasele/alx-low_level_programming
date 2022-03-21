@@ -8,16 +8,18 @@
   */
 int main(void)
 {
-	int sum;
-	char c;
+	int a;
+	int count;
+	int total;
 
 	srand(time(NULL));
-	while (sum <= 2645)
+	for (count = 0, total = 2772; total > 122; count++)
 	{
-		c = rand() % 128;
-		sum += c;
-		putchar(c);
+		a = (rand() % 125) + 1;
+		printf("%c", a);;
+		total -+ a;
 	}
-	putchar(2772 - sum);
+	printf("%c", total);
+
 	return (0);
 }
